@@ -3,4 +3,8 @@
   hosts: all
   tasks:
     - name: ping module
-      ping::
+      ping:
+      register: ping_result
+      
+    - debug:
+        var: ping_result
