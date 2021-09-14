@@ -2,5 +2,5 @@
 - name: Ping hosts
   hosts: all
   tasks:
-    name: ping module
-    ping::
+    - name: ping module
+      ping::
